@@ -1,0 +1,41 @@
+
+<div id="loader" class="main">
+    <div class="square_loader">
+    </div>
+</div>
+
+
+<style>
+    .main{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .square_loader{
+        width: 7rem;
+        height: 7rem;
+        background-color: transparent;
+        border: 7px solid green;
+        border-radius: 5rem;
+        border-top: 7px solid white;
+        animation: anim 2s infinite linear;
+        position: relative;
+    }
+    @keyframes anim{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
+</style>
